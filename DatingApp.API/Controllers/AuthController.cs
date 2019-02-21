@@ -28,7 +28,7 @@ namespace DatingApp.API.Controllers {
         }
 
         [HttpPost ("register")]
-
+        [AllowAnonymous]
         public async Task<IActionResult> Register (UserForRegisterDto userForRegisterDto) {
             // validate request
 
